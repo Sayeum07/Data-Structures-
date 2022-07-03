@@ -17,7 +17,7 @@ void main ()
         printf("\nChoose one option from the following list ...\n");  
         printf("\n===============================================\n");  
         printf("\n1.Insert in begining\n2.Insert at last\n");
-         printf("\nEnter your choice?\n");         
+        printf("\nEnter your choice?\n");         
         scanf("\n%d",&choice);  
         switch(choice)  
         {  
@@ -59,7 +59,7 @@ void lastinsert()
 {  
     struct node *ptr,*temp;  
     int item;     
-    ptr = (struct node*)malloc(sizeof(struct node));      
+    ptr = (struct node*)malloc(sizeof(struct node *));      
     if(ptr == NULL)  
     {  
         printf("\nMemory is Not available");     
